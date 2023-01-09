@@ -22,6 +22,8 @@ public class AliceDestroyer {
 
             System.out.println("The index is " + index + " and the length is " + length + ". We will now remove the AFFLICTED term. ");
             System.out.println(fixedAlice);
+
+            input.close();
         }
     }
 }

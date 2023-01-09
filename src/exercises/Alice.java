@@ -14,5 +14,7 @@ public class Alice {
         boolean results = aliceSentence.contains(searchTerm);
 
         System.out.println(results);
+
+        input.close();
     }
 }

@@ -12,5 +12,7 @@ public class CalculateMpg {
 
         double mpg = numMiles / numGallons;
         System.out.println("You are running on " + mpg + " mpg.");
+
+        input.close();
     }
 }

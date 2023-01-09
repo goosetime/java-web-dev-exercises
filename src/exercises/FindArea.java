@@ -12,5 +12,7 @@ public class FindArea {
         int width = input.nextInt();
 
         System.out.println("The area of this rectangle is " + (length * width));
+
+        input.close();
     }
 }
