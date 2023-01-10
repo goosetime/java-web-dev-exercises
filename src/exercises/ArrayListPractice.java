@@ -44,11 +44,11 @@ public class ArrayListPractice {
         input.close();
 
         //BONUS: Part 4
-       /* String eggRhyme = ArrayPractice.greenEggs;
+        String eggRhyme = ArrayPractice.greenEggs();
         String[] eggScramble = eggRhyme.split(" ");
         ArrayList<String> eggHamWords = new ArrayList<>(Arrays.asList(eggScramble));
 
-        System.out.println(printFive(eggHamWords)); */
+        System.out.println(printFive(eggHamWords));
 
     }
 

@@ -16,15 +16,19 @@ public class ArrayPractice {
             System.out.println(exampleArray[i]);
         }
 
-        String greenEggs = "I would not, could not, in a box. I would not, could not with a fox. I will not eat them in a house. I will not eat them with a mouse.";
+        /*String greenEggs = "I would not, could not, in a box. I would not, could not with a fox. I will not eat them in a house. I will not eat them with a mouse.";*/
 
         //first split: using a space
-        String[] hamArray = greenEggs.split(" ");
+        String[] hamArray = greenEggs().split(" ");
         System.out.println(Arrays.toString(hamArray));
 
         //second split: using periods
-        String[] samArray = greenEggs.split("\\.");
+        String[] samArray = greenEggs().split("\\.");
         System.out.println(Arrays.toString(samArray));
 
+    }
+
+    public static String greenEggs() {
+        return "I would not, could not, in a box. I would not, could not with a fox. I will not eat them in a house. I will not eat them with a mouse.";
     }
 }
