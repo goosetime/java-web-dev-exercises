@@ -1,13 +1,25 @@
 package org.launchcode.java.studios.countingcharacters;
 
+import java.io.IOException;
+import java.io.FileNotFoundException;
+
 import java.util.HashMap;
 import java.util.Scanner;
 import java.util.Map;
 
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
 public class Counting {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         String heron = "i am a heron. i haev a long neck and i pick fish out of the water w/ my beak. if you dont repost this comment on 10 other pages i will fly into your kitchen tonight and make a mess of your pots and pans";
+
+        Path filePath = Paths.get("/src/org/launchcode/java/studios/countingcharacters/beescript.txt/", "temp", "beescript.txt");
+
+        String beeMovie = Files.readString(filePath);
+        //String beeMovie = Files.readString(Paths.get("beescript.txt"));
 
         Scanner firstInput = new Scanner(System.in);
         Scanner secondInput = new Scanner(System.in);
